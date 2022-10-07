@@ -110,32 +110,3 @@ body {
     transform: scale(1.02);
 }
 
-.alert {
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    font-size: 18px;
-    padding: 10px 30px;
-    border-radius: 5px;
-    transform: translateX(200px);
-    transition: transform 0.5s linear;
-    display: none;
-}
-.error-alert {
-    background-color: rgb(193, 52, 52);
-    box-shadow: 5px 5px 30px rgb(193, 52, 52);
-}
-.success-alert {
-    background-color: rgb(43, 214, 85);
-    box-shadow: 5px 5px 30px rgb(43, 214, 85);
-}
-.error-alert.active {
-    transform: translateX(0);
-    transition: transform 0.5s linear;
-    display: block;
-}
-.success-alert.active {
-    transform: translate(0);
-    transition: transform 0.5s linear;
-    display: block;
-}
