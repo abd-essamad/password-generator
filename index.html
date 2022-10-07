@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Text animate</title>
+</head>
+<body>
+  <div class="container">
+    <div class="container-head">
+      <p class="title">Password Generator</p>
+      <div class="results">
+        <p class="show-result"></p>
+        <img class="copy" src="clipboard-svgrepo-com.svg" alt="">
+      </div>
+    </div>
+    <div class="container-body">
+      <div class="control">
+        <p>Password Length</p>
+        <input id="length" type="number" value="1" min="4" max="20" />
+      </div>
+      <div class="control">
+        <p>Include uppercase letters</p>
+        <input id="upper" type="checkbox"  />
+      </div>
+      <div class="control">
+        <p>Include lowercase letters</p>
+        <input id="lower" type="checkbox" />
+      </div>
+      <div class="control">
+        <p>Include numbers</p>
+        <input id="numbers" type="checkbox"  />
+      </div>
+      <div class="control">
+        <p>Include symbols</p>
+        <input id="symbol" type="checkbox"  />
+      </div>
+      <button class="generate">Generate Password</button>
+    </div>
+  </div>
+   <div class=" alert error-alert ">please check something</div>
+   <div class=" alert success-alert  ">password generated</div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
