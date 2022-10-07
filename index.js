@@ -77,3 +77,22 @@ const myFunc = {
   symbol: randomSymbol
 }
 
+// other Methods 
+const lettersUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
+const letterLower = "abcdefghijklmnopqrstuvwxyz"
+const symbols = "~^_-@()+/.&'-"
+function randomLowers(){
+  return lettersUpper[(Math.floor(Math.random() * lettersUpper.length))]
+
+}
+function randomUppers(){
+  return letterLower[(Math.floor(Math.random() * letterLower.length))]
+}
+
+function randomNumbers(){
+  return Math.floor(Math.random() * 10)
+}
+
+function randomSymbols(){
+  return symbols[(Math.floor(Math.random() * symbols.length))]
+}
